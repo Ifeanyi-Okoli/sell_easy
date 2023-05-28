@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title%}Products{% endblock%}
+
+{% block content%}
+
+    <h1>Featured Products</h1>
+    <div style="">
+    {%for product in products%}
+        <a href="{% url 'product' product.id %}">
+            <div style="background-color: {% cycle 'white' 'white' %}; border-radius:8px; border:2px solid gray; padding; box-shadow:2px 3px">
+                <h2>{{product.name|upper}}</h2>
+                <p>{{product.desc|truncatewords:50}}</p>
+                <p>{{product.price|add:100}}</p>
+            </div>
+        </a>
+    {% endfor %}
+    </div>
+
+    {% include './category.html' with categories=categories%}
+
+{% endblock%}

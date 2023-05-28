@@ -1,0 +1,14 @@
+
+.container{
+    background-color: #f2ecec;
+}
+
+.cart-btn{
+    background-color: #9e2727;
+    color:white;
+    font-size: 18px;
+    padding:10px;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --background-color: #A5D7E8;
+    --main-color: #0B2447;
+    --accent-color: #159895;
+    --accent-color-1: #576CBC;
+    --accent-color-2: #19376D;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope';
+    font-size:16px;
+    background-color: var(--background-color);
+    color:var(--main-color)
+}
+.banner{
+    width:100vw;
+}
+
+section{
+    padding:20px;
+    padding-bottom:40px;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 3px 5px gray;
+    border-radius: 10px;
+}
+
+.card:hover{
+    border:2px solid var(--accent-color)
+}
+
+.card.product button{
+    background-color: var(--accent-color);
+    color:white;
+    padding:10px;
+    width:100%;
+    border:0;
+    outline: none;
+}
+
+.discount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.discount button{
+    background-color: transparent;
+    font-size: 40px;
+    color:rgb(211, 49, 49);
+    border: 0;
+    outline: none;
+    font-weight: bold;
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.section{
+    padding: 10px;
+}
+
+.section-heading{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.view-all{
+    padding:10px;
+    border-bottom: 4px solid var(--accent-color);
+    color:var(--main-color);
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap:20px;
+    align-items: center;
+}
+
+nav, .middle, .right, .auth{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:var(--background-color);
+    background-color: var(--main-color);
+}
+
+nav{
+    position: relative;
+    width:100%;
+}
+
+.shopping-cart{
+    background-color: var(--accent-color);
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+    color:white;
+}
+
+.right ul{
+    list-style: none;
+}
+
+.right ul li{
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
